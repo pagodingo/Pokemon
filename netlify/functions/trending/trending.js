@@ -1,9 +1,10 @@
 const request = require('request');
 function getYouTubeTrending() {
     //https://www.npmjs.com/package/request
+    let trending = []
     request('http://www.youtube.com/trending', function (error, response, body) {
 
-        let trending = []
+        
 
         //body = garbled mess of HTML
         //"watchendpoint" - a recurring pattern I noticed in the HTML that made it easier for me to split it.
@@ -32,8 +33,9 @@ function getYouTubeTrending() {
                     trending.push(Object.assign(JSON.parse(videoMeta), {"videoId": videoId}))
             }
         } // for something that literally should not have worked at all, this code isn't THAT bad. but hey idk.
-        return trending;
-    })}
+    }) 
+    return trending;
+}
 
 const handler = async (event) => {
     try {
