@@ -41,7 +41,8 @@ const handler = async (event) => {
     try {
       return {
         statusCode: 200,
-        body: getYouTubeTrending().toString(),
+        //body: getYouTubeTrending().toString(),
+          body: JSON.Stringify({test: "test"})
         // // more keys you can return:
         // headers: { "headerName": "headerValue", ... },
         // isBase64Encoded: true,
