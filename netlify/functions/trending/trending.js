@@ -1,8 +1,6 @@
 const request = require('request');
 const handler = async (event) => {
-    
-    try {
-        function getYouTubeTrending() {
+function getYouTubeTrending() {
                         //https://www.npmjs.com/package/request
                         let trending = []
                         request('http://www.youtube.com/trending', function (error, response, body) {
@@ -39,7 +37,11 @@ const handler = async (event) => {
                         }) 
                         return trending;
                     }
-      trending = getYoutubeTrending()
+    
+    try {
+        console.log("foo")
+        console.log(getYoutubeTrending())
+        trending = getYoutubeTrending()
       return {
         statusCode: 200,
         //body: getYouTubeTrending().toString(),
