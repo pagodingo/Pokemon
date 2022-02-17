@@ -1,7 +1,7 @@
 const request = require('request');
 async function getYoutubeTrending() {
                         //https://www.npmjs.com/package/request
-                        let trending = []
+                        let trending = ["foo"]
                         await request('http://www.youtube.com/trending', function (error, response, body) {
 
 
