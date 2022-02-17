@@ -1,5 +1,4 @@
 const request = require('request');
-const handler = async (event) => {
 function getYouTubeTrending() {
                         //https://www.npmjs.com/package/request
                         let trending = []
@@ -38,6 +37,7 @@ function getYouTubeTrending() {
                         return trending;
                     }
     
+const handler = async (event) => {
     try {
         console.log("foo")
         console.log(await getYoutubeTrending())
