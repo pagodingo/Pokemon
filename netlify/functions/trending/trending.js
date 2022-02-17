@@ -40,8 +40,8 @@ function getYouTubeTrending() {
     
     try {
         console.log("foo")
-        console.log(getYoutubeTrending())
-        trending = getYoutubeTrending()
+        console.log(await getYoutubeTrending())
+        await trending = getYoutubeTrending()
       return {
         statusCode: 200,
         //body: getYouTubeTrending().toString(),
