@@ -28,7 +28,7 @@ async function getYoutubeTrending() {
                                         trending.push(Object.assign(JSON.parse(videoMeta), {"videoId": videoId}))
                                 }
                             }
-                        }).then(res => return trending) 
+                        }).then(res => {return trending}) 
                         
                     }
     
