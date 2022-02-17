@@ -39,13 +39,14 @@ function getYoutubeTrending() {
     
 const handler = async (event) => {
     try {
+      trending = await getYoutubeTrending()
         //console.log("foo")
         //console.log(await getYoutubeTrending())
        // trending = await getYoutubeTrending()
       return {
         statusCode: 200,
         //body: getYouTubeTrending().toString(),
-          body: JSON.stringify({test: await getYoutubeTrending()})
+          body: JSON.stringify({test: trending})
         // // more keys you can return:
         // headers: { "headerName": "headerValue", ... },
         // isBase64Encoded: true,
