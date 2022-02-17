@@ -1,8 +1,8 @@
 const request = require('request');
-function getYoutubeTrending() {
+async function getYoutubeTrending() {
                         //https://www.npmjs.com/package/request
                         let trending = ["foo"]
-                        request('http://www.youtube.com/trending', function (error, response, body) {
+                        await request('http://www.youtube.com/trending', function (error, response, body) {
                             //body = garbled mess of HTML
                             //"watchendpoint" - a recurring pattern I noticed in the HTML that made it easier for me to split it.
                             //splitting by that gave back 100 items, all big chunks of YouTube Meta Data.
@@ -28,8 +28,8 @@ function getYoutubeTrending() {
                                         trending.push(Object.assign(JSON.parse(videoMeta), {"videoId": videoId}))
                                 }
                             }
-                        }) 
-                        return trending;
+                        }).then(res => return trending) 
+                        
                     }
     
 const handler = async (event) => {
