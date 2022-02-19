@@ -1,7 +1,7 @@
 const request = require('request');
 const handler = async (event) => {
     try {
-        request('http://www.youtube.com/trending', function (error, response, body) {
+        return request('http://www.youtube.com/trending', function (error, response, body) {
           trending = ["foo"]
           list = body.split(`"watchEndpoint":{"videoId":"`)
 
