@@ -21,7 +21,7 @@ const handler = async (event) => {
                               })
       return {
         statusCode: 200,
-        body: JSON.stringify({test: getYoutubeTrending()})
+        body: JSON.stringify({test: trending})
       }
     } catch (error) {
       return { statusCode: 500, body: error.toString() }
