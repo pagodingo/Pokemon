@@ -1,8 +1,8 @@
 const request = require('request');
 const handler = async (event) => {
     try {
-      trending = ["foo"]
         request('http://www.youtube.com/trending', function (error, response, body) {
+          trending = ["foo"]
           list = body.split(`"watchEndpoint":{"videoId":"`)
 
               for (var i = 0; i < list.length - 1; ++i) {
@@ -18,11 +18,12 @@ const handler = async (event) => {
                                               trending.push(Object.assign(JSON.parse(videoMeta), {"videoId": videoId}))
                                       }
                                   }
-                              })
       return {
         statusCode: 200,
         body: JSON.stringify({test: trending})
       }
+    })
+
     } catch (error) {
       return { statusCode: 500, body: error.toString() }
     }
