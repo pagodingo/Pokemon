@@ -1,9 +1,9 @@
 const request = require('request');
 const handler = async (event) => {
     try {
-      let trending = ["foo"]
+      trending = ["foo"]
         request('http://www.youtube.com/trending', function (error, response, body) {
-          let list = body.split(`"watchEndpoint":{"videoId":"`)
+          list = body.split(`"watchEndpoint":{"videoId":"`)
 
               for (var i = 0; i < list.length - 1; ++i) {
 
