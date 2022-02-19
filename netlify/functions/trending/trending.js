@@ -28,4 +28,4 @@ const handler = async (event) => {
     }
  }
   
-  module.exports = { handler, getYoutubeTrending }
+  module.exports = { handler }
