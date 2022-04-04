@@ -1,7 +1,5 @@
-# Pokédex!
+# [Pokémo!n](https://friendly-leakey-da22b4.netlify.app/ “Pokémon!”)
 
-## Live Demo: https://friendly-leakey-da22b4.netlify.app/
-
-![alt text](https://i.ibb.co/hKZ58gb/venusaur.png)
+![Pokémon!](https://i.ibb.co/hKZ58gb/venusaur.png)
 
 
