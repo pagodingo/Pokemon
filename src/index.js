@@ -54,9 +54,8 @@ class Pokemon extends React.Component {
 
     return (
       <div>
-        <h1 className="logo main-title"><b>Pokédex!</b>
+        <h1 className="logo main-title"><b>Pokémon!</b>
         </h1>
-        <h3 className="logo">Find Stats ~</h3>
       <form onSubmit={this.submitHandle}>
         <input
           type="text" ref={el => this.element = el}
