@@ -59,7 +59,7 @@ class Pokemon extends React.Component {
       <form onSubmit={this.submitHandle}>
         <input
           type="text" ref={el => this.element = el}
-        placeholder=" Pikachu" spellCheck="false"/><i className="search-icon fa fa-search"></i>
+        placeholder=" Charizard" spellCheck="false"/><i className="search-icon fa fa-search"></i>
       </form>
       <div className="card">
       <div className="card-top"></div>
