@@ -71,15 +71,15 @@ class Pokemon extends React.Component {
       </div>
       <div className="stats">
         <div className="ds health-points">
-          <h6 title="Health">HP <i className="fas fa-heart"></i></h6>
+          <h6 title="Health">HP ♥</h6>
           <p id="health-stat">hp</p>
         </div>
         <div className="ds experience">
-          <h6 title="Experience">XP <i className="fas fa-battery-full"></i></h6>
+          <h6 title="Experience">XP ✦<i className="fas fa-battery-full"></i></h6>
           <p id="xp-stat">xp</p>
         </div>
         <div className="ds type">
-          <h6 title="Type">Type <i className="fab fa-optin-monster"></i></h6>
+          <h6 title="Type">Type ✪</h6>
           <p id="type-stat">type</p>
         </div>
       </div>
