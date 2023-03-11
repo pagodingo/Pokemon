@@ -24,6 +24,13 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
+#poke-img:hover{
+  background-color: #000000;
+  border:5px solid white;
+  border-radius: 50%;
+  transition: .55s !important;
+}
+
 .search-icon {
   box-sizing: border-box;
   padding: 10px;
