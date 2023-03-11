@@ -64,7 +64,7 @@ class Pokemon extends React.Component {
       <div className="card">
       <div className="card-top"></div>
       <div className="avatar-holder">
-        <img id="poke-img" src="" alt="pokemon-not-found?"/>
+        <a href={'https://www.pokemon.com/us/pokedex/'+this.state.string} rel="noreferrer" target="_blank" ><img id="poke-img" src="" alt="pokemon-not-found?"/></a>
       </div>
       <div className="name">
         <a href={'https://www.pokemon.com/us/pokedex/'+this.state.string} rel="noreferrer" target="_blank" id="pokemon-name">Pikachu</a>
